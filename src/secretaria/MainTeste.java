@@ -50,6 +50,7 @@ public class MainTeste {
 								i + " - Nome: " + listaFuncionario[i].getNome() + 
 								" \t\t Data Nasc: " + listaFuncionario[i].getDtNasc() + 
 								" \t\t Matricula: " + listaFuncionario[i].getMatricula());
+						
 					}
 					
 				}
