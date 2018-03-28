@@ -11,6 +11,7 @@ public class Funcionario extends Pessoa {
 	private int matricula;
 	private Date dtNasc;
 
+	
 	public Funcionario(String nome, Date dtNasc, int matricula) {
 		super(nome, dtNasc);
 		this.matricula = matricula;

@@ -23,5 +23,14 @@ public class Pessoa {
 		return dtNasc;
 	}
 	
+	public void setNome(String nome) {
+		this.nome = nome;
+		
+	}
 
+	public void setDtNasc(Date dtNasc) {
+		this.dtNasc = dtNasc;
+		
+	
+	}
 }
