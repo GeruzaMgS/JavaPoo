@@ -10,7 +10,7 @@ import br.opet.tds172a.util.MyReader;
 
 public class MainTeste {
 
-	public final static ArrayList<Funcionario> listaFuncionario = new ArrayList<Funcionario>();
+	private static ArrayList<Funcionario> listaFuncionario = new ArrayList<Funcionario>();
 
 	public static void main(String[] args) throws Exception {
 
