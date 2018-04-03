@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class MyReader extends com.opet.util.Reader {
+public class MyReader extends Reader {
 
 	private static Scanner scanner = new Scanner(System.in);
 
@@ -12,6 +12,7 @@ public class MyReader extends com.opet.util.Reader {
 		String d = scanner.nextLine();
 		Date dd = null;
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		sdf.setLenient(false);
 		try {
 			dd = sdf.parse(d);
 		} catch (Exception e) {

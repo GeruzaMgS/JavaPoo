@@ -11,17 +11,26 @@ public class Reader {
 		return text;
 	}
 
-	public static final int readInt() throws Exception {
+	public static final int readInt()  {
+
 		String i = scanner.nextLine();
 		int ii = 0;
-		try {
-			ii = Integer.parseInt(i);
-		} catch (Exception e) {
-			System.out.println("Não foi possível transformar: " + i + " em Inteiro");
-			throw e;
-		}
+
+		 
+			
+			try {
+				ii = Integer.parseInt(i);
+			} catch (NumberFormatException e) {
+				System.out.println("Não foi possível transformar: " + i + " em Inteiro, digite um numero valido");
+				ii = Reader.readInt();
+			}
+			
+			
+		
 		return ii;
 	}
+	
+	
 
 	public static final double readDouble() throws Exception {
 		String db = scanner.nextLine();
